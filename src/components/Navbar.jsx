@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white shadow">
+    <nav className="relative z-40 bg-white shadow">
       <div className="container mx-auto px-6 lg:px-16 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
@@ -99,5 +99,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-  )
+)
 }

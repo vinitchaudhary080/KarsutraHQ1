@@ -1,6 +1,6 @@
 // src/components/AboutSection.jsx
 import React from 'react'
-import aboutImg from '../assets/about.jpg'  // apni image yahan daalo
+import aboutImg from '../assets/about.jpg'
 
 export default function AboutSection() {
   const features = [
@@ -11,32 +11,23 @@ export default function AboutSection() {
   ]
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 lg:px-16">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src={aboutImg}
-              alt="Professional accounting"
-              className="w-full rounded-3xl object-cover"
-            />
-          </div>
-
+    <section className="py-12 sm:py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-12">
           {/* Text */}
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Professional Accounting Services for Business and Individuals
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-base sm:text-lg text-gray-700 mb-6">
               GM Financial offers tailored services for diverse individual and business needs across multiple industries, dedicated to guiding you towards a prosperous future amidst the dynamic financial and regulatory landscape.
             </p>
             <ul className="space-y-4">
               {features.map((feature) => (
-                <li key={feature} className="flex items-center">
-                  <span className="flex-shrink-0 w-8 h-8 bg-green-100 text-green-500 rounded-full flex items-center justify-center mr-3">
+                <li key={feature} className="flex items-start">
+                  <span className="flex-shrink-0 w-6 h-6 bg-green-100 text-green-500 rounded-full flex items-center justify-center mr-3 mt-1">
                     <svg
-                      className="w-4 h-4"
+                      className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -47,10 +38,21 @@ export default function AboutSection() {
                       />
                     </svg>
                   </span>
-                  <span className="text-gray-800">{feature}</span>
+                  <span className="text-sm sm:text-base text-gray-800">
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src={aboutImg}
+              alt="Professional accounting"
+              className="w-full h-auto rounded-3xl object-cover"
+            />
           </div>
         </div>
       </div>
