@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 lg:px-16 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="KarsutraHQ Logo" className="h-20" />
+          <img src={logo} alt="KarsutraHQ Logo" className="h-10 transform scale-150 origin-left" />
         </Link>
 
         {/* Hamburger / Close */}

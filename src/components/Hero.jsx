@@ -5,7 +5,7 @@ import heroImg from '../assets/hero.jpg'
 export default function HeroSection() {
   return (
     // ये wrapper बाकी sections की तरह container constrain कर देगा
-    <div className="container mx-auto px-6 lg:px-16">
+    <div className="container mx-auto px-6 lg:px-16 mt-8">
       <div className="rounded-3xl overflow-hidden">
         <section className="relative h-[70vh] md:h-[60vh] lg:h-[500px]">
           {/* Background Image */}
