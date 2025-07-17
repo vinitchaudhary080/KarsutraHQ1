@@ -4,51 +4,55 @@ import React from 'react'
 export default function FAQ() {
   const faqs = [
     {
-      question: "What services do you offer?",
-      answer: "We provide end-to-end solutions including UI/UX design, web development, digital marketing, and video production."
+      question: "Which services does KarsutraHQ provide?",
+      answer: "We specialize in comprehensive tax filing, GST reconciliation, accounting & bookkeeping, business registration, and financial consultancy tailored for small to medium enterprises."
     },
     {
-      question: "How can I request a quote?",
-      answer: "Just reach out via our contact form or email us at thetagainers@gmail.com—we’ll get back to you within 24 hours."
+      question: "How do I start working with you?",
+      answer: "Simply fill out our contact form or email us at support@karsutrahq.com. We’ll schedule an initial consultation within 24 hours to understand your needs and outline the next steps."
     },
     {
-      question: "Do you offer post-launch support?",
-      answer: "Yes, every project comes with 3 months of complimentary support and maintenance after launch."
+      question: "What are your pricing models?",
+      answer: "We offer both fixed-fee packages for standard services (like annual tax filing) and hourly rates for bespoke consultancy. A detailed quote follows our initial assessment."
     },
     {
-      question: "What pricing models do you use?",
-      answer: "We work on both fixed-price packages and hourly rates, whichever suits your project scope best."
-    }
+      question: "Can you handle past-year tax filings?",
+      answer: "Yes—our team can assist with filing returns for up to 5 previous years, ensuring compliance with current regulations and helping you claim any due refunds."
+    },
+    {
+      question: "Do you offer ongoing support after filing?",
+      answer: "Absolutely. We provide 3 months of post-filing support for any queries from income tax notices to GST audits, with optional extended support plans available."
+    },
   ]
 
   return (
     <section id="faq" className="py-20 bg-gray-100">
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-start">
-        {/* Left: Label + Heading */}
-        <div className="lg:w-1/2">
-          <span className="inline-flex items-center px-3 py-1 border border-gray-200 rounded-full text-sm font-medium text-gray-600 mb-4">
-            <span className="text-xs mr-2">●</span>FAQs
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Frequently Asked <br /> Questions
-          </h2>
-        </div>
+      {/* Heading */}
+      <div className="container mx-auto px-6 lg:px-16 text-center mb-12">
 
-        {/* Right: FAQ list */}
-        <div className="lg:w-1/2 mt-10 lg:mt-0">
-          <div className="divide-y divide-gray-200">
-            {faqs.map((faq, idx) => (
-              <div key={idx} className="py-6 flex flex-col md:flex-row md:items-start md:justify-between">
-                <h3 className="text-lg font-medium text-gray-900">
-                  {faq.question}
-                </h3>
-                <p className="mt-3 md:mt-0 text-gray-600 max-w-md">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+          Frequently Asked{' '}
+          <span className="bg-green-100 text-gray-900 px-2 py-1 rounded">
+            Questions
+          </span>
+        </h2>
+      </div>
+
+      {/* FAQ Items */}
+      <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 gap-8">
+        {faqs.map((faq, idx) => (
+          <div
+            key={idx}
+            className="border-b border-gray-200 pb-6"
+          >
+            <h3 className="text-lg font-medium text-gray-900 mb-2">
+              {faq.question}
+            </h3>
+            <p className="text-gray-600">
+              {faq.answer}
+            </p>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   )

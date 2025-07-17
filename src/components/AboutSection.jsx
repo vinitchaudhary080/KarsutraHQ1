@@ -11,7 +11,7 @@ export default function AboutSection() {
   ]
 
   return (
-    <section className="py-12 sm:py-16 bg-white">
+    <section id="about" className="py-12 sm:py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-12">
           {/* Text */}

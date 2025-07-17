@@ -1,54 +1,56 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 import logo from '../assets/karsutralogo.jpeg'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleNavClick = () => setIsOpen(false)
+
   return (
-    <nav className="relative z-40 bg-white shadow">
+    <nav className="relative z-50 bg-white shadow">
       <div className="container mx-auto px-6 lg:px-16 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0">
+        <Link to="/" className="flex-shrink-0">
           <img src={logo} alt="KarsutraHQ Logo" className="h-20" />
-        </a>
+        </Link>
 
-        {/* Hamburger (mobile) */}
+        {/* Hamburger / Close */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-gray-800 focus:outline-none"
         >
           {isOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           )}
         </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-8">
-          <ul className="flex items-center space-x-8 text-gray-800 font-medium">
-            <li><a href="/about"      className="hover:text-gray-600">About us</a></li>
-            <li><a href="/services"   className="hover:text-gray-600">Services</a></li>
-            
-          </ul>
+          <Link
+            smooth
+            to="/#about"
+            className="text-gray-800 font-medium hover:text-gray-600"
+          >
+            About us
+          </Link>
+          <Link
+            smooth
+            to="/#services"
+            className="text-gray-800 font-medium hover:text-gray-600"
+          >
+            Services
+          </Link>
           <a
-            href="#contact"
-            className="bg-green-400 hover:bg-green-500 text-white font-medium py-2 px-6 rounded-full transition"
+            href="mailto:karsutrahq@gmail.com"
+            className="bg-green-400 hover:bg-green-500 text-white font-medium py-2 px-6 rounded-xl transition"
           >
             Get in touch
           </a>
@@ -57,39 +59,42 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
-          <ul className="flex flex-col px-6 py-4 space-y-4">
+        <div className="md:hidden absolute top-full inset-x-0 bg-white border-t z-50 shadow-lg">
+          <ul className="flex flex-col px-6 pt-4 space-y-4">
             <li>
-              <a
-                href="/about"
+              <Link
+                smooth
+                to="/#about"
+                onClick={handleNavClick}
                 className="block text-gray-800 font-medium hover:text-gray-600"
-                onClick={() => setIsOpen(false)}
               >
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/services"
+              <Link
+                smooth
+                to="/#services"
+                onClick={handleNavClick}
                 className="block text-gray-800 font-medium hover:text-gray-600"
-                onClick={() => setIsOpen(false)}
               >
                 Services
-              </a>
-            </li>
-            
-            <li>
-              <a
-                href="#contact"
-                className="block bg-green-400 hover:bg-green-500 text-white font-medium text-center py-2 px-6 rounded-full transition"
-                onClick={() => setIsOpen(false)}
-              >
-                Get in touch
-              </a>
+              </Link>
             </li>
           </ul>
+
+          {/* Action Button */}
+          <div className="px-6 py-4">
+            <a
+              href="mailto:karsutrahq@gmail.com"
+              onClick={handleNavClick}
+              className="block w-full bg-green-400 hover:bg-green-500 text-white font-medium text-center py-2 rounded-xl transition"
+            >
+              Get in touch
+            </a>
+          </div>
         </div>
       )}
     </nav>
-)
+  )
 }

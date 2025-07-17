@@ -1,37 +1,54 @@
 // src/components/Footer.jsx
 import React from 'react'
+import phoneIcon from '../assets/Phone Rounded.svg'
+import letterIcon from '../assets/Letter.svg'
+import buildingIcon from '../assets/Buildings.svg'
+import { Link } from 'react-router-dom'
+
 
 export default function Footer() {
   const quickLinks = ['About Us', 'Services', 'Testimonials', 'FAQs', 'Contact Us']
- 
   const services = [
-    'Budgeting Assistance',
-    'Financial Planning',
-    'Estate Planning',
-    'Tax Optimization',
-    'Investment Guidance',
-    'Retirement Planning',
+    'Company Incorporation',
+    'GST Registration Online',
+    'Limited Liability Partnership',
+    'Publich Limited Company',
+    'One Person Company',
+    'Startup Registration',
+    
   ]
   const team = [
     {
-      label: 'Phone', value: '+91-9413730750', icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 5h2l1 5-1 5H3m18-10h-2l-1 5 1 5h2M8 3h8l1 4H7L8 3z" />
-        </svg>
+      label: 'Phone',
+      value: '+91-9413730750',
+      icon: (
+        <img
+          src={phoneIcon}
+          alt="Phone"
+          className="w-5 h-5 mr-2 object-contain"
+        />
       )
     },
     {
-      label: 'Email', value: 'karsutrahq@gmail.com', icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6m-9 6v6" />
-        </svg>
+      label: 'Email',
+      value: 'karsutrahq@gmail.com',
+      icon: (
+        <img
+          src={letterIcon}
+          alt="Email"
+          className="w-5 h-5 mr-2 object-contain"
+        />
       )
     },
     {
-      label: 'Office', value: '4th Floor, ENKAY TOWER, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122001', icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 21V3h16v18M8 21V12h8v9" />
-        </svg>
+      label: 'Office',
+      value: '4th Floor, ENKAY TOWER, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122001',
+      icon: (
+        <img
+          src={buildingIcon}
+          alt="Office address"
+          className="w-5 h-5 mr-2 object-contain"
+        />
       )
     },
   ]
@@ -52,46 +69,46 @@ export default function Footer() {
         </div>
       </div>
 
-
-
       {/* Main Links */}
-      <div className="container mx-auto px-6 lg:px-16 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="container mx-auto px-6 lg:px-16 py-12 flex flex-col md:flex-row md:justify-between gap-8">
         {/* Quick Links */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-sm font-semibold uppercase mb-4">Quick Links</h3>
           <ul className="space-y-2">
             {quickLinks.map((link) => (
               <li key={link}>
-                <a href="#" className="hover:underline">
-                  {link}
-                </a>
+                <a href="#" className="hover:underline">{link}</a>
               </li>
             ))}
           </ul>
         </div>
 
-      
         {/* Services */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-sm font-semibold uppercase mb-4">Services</h3>
           <ul className="space-y-2">
             {services.map((svc) => (
               <li key={svc}>
-                <a href="#" className="hover:underline">
-                  {svc}
-                </a>
+                <a href="#" className="hover:underline">{svc}</a>
               </li>
             ))}
           </ul>
         </div>
 
         {/* Contact */}
-        <div>
-          <h3 className="text-sm font-semibold uppercase mb-4">Contact</h3>
+        <div className="flex-1">
+          <h3 className="text-sm font-semibold uppercase mb-4">
+            <a
+              href="mailto:karsutrahq@gmail.com"
+              className="hover:underline"
+            >
+              Contact
+            </a>
+          </h3>
           <ul className="space-y-4">
             {team.map(({ label, value, icon }) => (
               <li key={label} className="flex items-start">
-                <div className="flex-shrink-0">{icon}</div>
+                {icon}
                 <div>
                   <p className="text-sm font-semibold">{label}</p>
                   <p className="text-sm">{value}</p>
@@ -101,20 +118,23 @@ export default function Footer() {
           </ul>
         </div>
 
-        
       </div>
 
       {/* Bottom Legal */}
       <div className="border-t">
-        <div className="container mx-auto px-6 lg:px-16 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
-          <p>
-            KarSutraHQ © 2025. All Rights Reserved.{' '}
-            <span className="mx-2">|</span>
-            <a href="#" className="hover:underline">Terms of Service</a>{' '}
-            <span className="mx-2">|</span>
-            <a href="#" className="hover:underline">Privacy Policy</a>
+        <div className="container mx-auto px-6 lg:px-16 py-4 flex flex-col md:flex-row items-center">
+          <p className="text-sm text-gray-600 md:flex-1">
+            KarSutraHQ © 2025. All Rights Reserved.
           </p>
+          <div className="mt-2 md:mt-0 space-x-4">
 
+            <Link to="/terms" className="text-sm text-gray-600 hover:underline">
+              Terms of Service
+            </Link>
+            <Link to="/privacy" className="text-sm text-gray-600 hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -28,15 +28,15 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-full transition"
+                className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-xl transition"
               >
                 Get in touch
               </a>
               <a
                 href="/login"
-                className="inline-block border-2 border-white text-white font-medium py-3 px-6 rounded-full transition hover:bg-white hover:text-gray-900"
+                className="inline-block border-2 border-white text-white font-medium py-3 px-6 rounded-xl transition hover:bg-white hover:text-gray-900"
               >
-                Client Login
+                Explore Services
               </a>
             </div>
           </div>

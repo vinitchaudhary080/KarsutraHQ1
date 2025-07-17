@@ -31,8 +31,8 @@ export default function BannerSection() {
               ))}
             </div>
             <a
-              href="#contact"
-              className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-full transition"
+              href="mailto:karsutrahq@gmail.com"
+              className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-xl transition"
             >
               Get in touch
             </a>
