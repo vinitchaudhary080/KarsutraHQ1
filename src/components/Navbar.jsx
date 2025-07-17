@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/karsutralogo.jpeg'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 lg:px-16 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
-          <img src={logo} alt="KarsutraHQ Logo" className="h-10" />
+          <img src={logo} alt="KarsutraHQ Logo" className="h-20" />
         </a>
 
         {/* Hamburger (mobile) */}
@@ -44,7 +44,7 @@ export default function Navbar() {
           <ul className="flex items-center space-x-8 text-gray-800 font-medium">
             <li><a href="/about"      className="hover:text-gray-600">About us</a></li>
             <li><a href="/services"   className="hover:text-gray-600">Services</a></li>
-            <li><a href="/articles"   className="hover:text-gray-600">Recent Articles</a></li>
+            
           </ul>
           <a
             href="#contact"
@@ -77,15 +77,7 @@ export default function Navbar() {
                 Services
               </a>
             </li>
-            <li>
-              <a
-                href="/articles"
-                className="block text-gray-800 font-medium hover:text-gray-600"
-                onClick={() => setIsOpen(false)}
-              >
-                Recent Articles
-              </a>
-            </li>
+            
             <li>
               <a
                 href="#contact"

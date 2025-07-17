@@ -3,7 +3,7 @@ import React from 'react'
 
 const services = [
   {
-    title: 'Estate Planning',
+    title: 'Company Incorporation',
     description:
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
@@ -23,7 +23,107 @@ const services = [
     ),
   },
   {
-    title: 'Tax Preparation',
+    title: 'GST Registration Online',
+    description:
+      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25v-6h-6v6H3.75a.75.75 0 01-.75-.75V9.75z"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Limited Liability Partnership',
+    description:
+      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25v-6h-6v6H3.75a.75.75 0 01-.75-.75V9.75z"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Publich Limited Company',
+    description:
+      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25v-6h-6v6H3.75a.75.75 0 01-.75-.75V9.75z"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'One Person Company',
+    description:
+      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25v-6h-6v6H3.75a.75.75 0 01-.75-.75V9.75z"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Startup Registration',
+    description:
+      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25v-6h-6v6H3.75a.75.75 0 01-.75-.75V9.75z"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Trademark Registration',
     description:
       'Navigate the complexities of tax season with our expert services, tailored to maximize savings and compliance for businesses of all sizes.',
     icon: (
@@ -43,7 +143,7 @@ const services = [
     ),
   },
   {
-    title: 'Accounting Services',
+    title: '12A or 12AA or 80G Registration',
     description:
       "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
     icon: (
@@ -62,6 +162,67 @@ const services = [
       </svg>
     ),
   },
+  {
+    title: 'Online Trust Registration',
+    description:
+      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 3v18h18M7 14l3-3 2 2 4-4"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Section 8 Company',
+    description:
+      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 3v18h18M7 14l3-3 2 2 4-4"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: 'Business Registration',
+    description:
+      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+    icon: (
+      <svg
+        className="w-5 h-5 text-green-500"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 3v18h18M7 14l3-3 2 2 4-4"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+
 ]
 
 export default function ServicesSection() {

@@ -2,8 +2,8 @@
 import React from 'react'
 
 export default function Footer() {
-  const quickLinks = ['About Us', 'Case Studies', 'Services', 'Blogs', 'Contact Us']
-  const otherPages = ['Our Teams', 'Testimonials', 'FAQs', '404']
+  const quickLinks = ['About Us', 'Services', 'Testimonials', 'FAQs', 'Contact Us']
+ 
   const services = [
     'Budgeting Assistance',
     'Financial Planning',
@@ -14,21 +14,21 @@ export default function Footer() {
   ]
   const team = [
     {
-      label: 'Phone', value: '+1 (555) 123-4567', icon: (
+      label: 'Phone', value: '+91-9413730750', icon: (
         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 5h2l1 5-1 5H3m18-10h-2l-1 5 1 5h2M8 3h8l1 4H7L8 3z" />
         </svg>
       )
     },
     {
-      label: 'Email', value: 'info@finania.com', icon: (
+      label: 'Email', value: 'karsutrahq@gmail.com', icon: (
         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6m-9 6v6" />
         </svg>
       )
     },
     {
-      label: 'Office', value: '123 Financial Way, Suite 456, New York, NY 10001', icon: (
+      label: 'Office', value: '4th Floor, ENKAY TOWER, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122001', icon: (
         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 21V3h16v18M8 21V12h8v9" />
         </svg>
@@ -70,20 +70,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Other Pages */}
-        <div>
-          <h3 className="text-sm font-semibold uppercase mb-4">Other Pages</h3>
-          <ul className="space-y-2">
-            {otherPages.map((page) => (
-              <li key={page}>
-                <a href="#" className="hover:underline">
-                  {page}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+      
         {/* Services */}
         <div>
           <h3 className="text-sm font-semibold uppercase mb-4">Services</h3>
@@ -114,33 +101,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Newsletter */}
-        <div>
-          <h3 className="text-sm font-semibold uppercase mb-4">Subscribe Newsletter</h3>
-          <form className="flex space-x-2 mb-4">
-            <input
-              type="email"
-              placeholder="your@gmail.com"
-              className="flex-grow bg-gray-100 rounded-full px-4 py-2 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-black text-white rounded-full px-4 py-2"
-            >
-              Subscribe
-            </button>
-          </form>
-          <p className="text-sm">
-            Subscribe to our newsletter for the latest financial tips and insights.
-          </p>
-        </div>
+        
       </div>
 
       {/* Bottom Legal */}
       <div className="border-t">
         <div className="container mx-auto px-6 lg:px-16 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
           <p>
-            Finania © 2025. All Rights Reserved.{' '}
+            KarSutraHQ © 2025. All Rights Reserved.{' '}
             <span className="mx-2">|</span>
             <a href="#" className="hover:underline">Terms of Service</a>{' '}
             <span className="mx-2">|</span>
