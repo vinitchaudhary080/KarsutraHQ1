@@ -8,7 +8,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -88,7 +88,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ const services = [
       "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -128,7 +128,7 @@ const services = [
       'Navigate the complexities of tax season with our expert services, tailored to maximize savings and compliance for businesses of all sizes.',
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -148,7 +148,7 @@ const services = [
       "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -168,7 +168,7 @@ const services = [
       "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -188,7 +188,7 @@ const services = [
       "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -208,7 +208,7 @@ const services = [
       "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
     icon: (
       <svg
-        className="w-5 h-5 text-green-500"
+        className="w-5 h-5 text-[#FA9426]"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -232,7 +232,7 @@ export default function ServicesSection() {
         {/* Section Heading */}
         <h2 className="text-4xl font-bold text-gray-900 mb-8">
           Our{' '}
-          <span className="bg-green-100 text-gray-900 px-2 py-1 rounded">
+          <span className="bg-[#FEEAD4]  text-gray-900 px-2 py-1 rounded">
             core services
           </span>
         </h2>
@@ -244,7 +244,7 @@ export default function ServicesSection() {
               key={svc.title}
               className="bg-gray-100 rounded-3xl p-8 flex flex-col"
             >
-              <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-[#FEEAD4]  rounded-full flex items-center justify-center mb-4">
                 {svc.icon}
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-2">

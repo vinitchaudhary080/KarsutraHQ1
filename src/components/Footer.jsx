@@ -61,7 +61,7 @@ export default function Footer() {
           {Array(3).fill("LET'S TALK ↗").map((text, i) => (
             <span
               key={i}
-              className="inline-block mx-8 text-6xl font-bold text-gray-300 uppercase"
+              className="inline-block mx-8 text-6xl font-bold text-[#FA9426] uppercase"
             >
               {text}
             </span>

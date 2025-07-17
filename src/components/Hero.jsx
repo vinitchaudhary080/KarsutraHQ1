@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-xl transition"
+                className="inline-block bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium py-3 px-6 rounded-xl transition"
               >
                 Get in touch
               </a>

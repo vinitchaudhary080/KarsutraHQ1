@@ -11,7 +11,7 @@ export default function Testimonials() {
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
            Hear what our{' '}
-            <span className="bg-green-100 text-gray-900 px-2 py-1 rounded">
+            <span className="bg-[#FEEAD4]  text-gray-900 px-2 py-1 rounded">
               clients say
             </span>
           </h2>

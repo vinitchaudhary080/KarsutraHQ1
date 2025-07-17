@@ -50,7 +50,7 @@ export default function Navbar() {
           </Link>
           <a
             href="mailto:karsutrahq@gmail.com"
-            className="bg-green-400 hover:bg-green-500 text-white font-medium py-2 px-6 rounded-xl transition"
+            className="inline-block bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium py-3 px-6 rounded-xl transition"
           >
             Get in touch
           </a>

@@ -32,7 +32,7 @@ export default function FAQ() {
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
           Frequently Asked{' '}
-          <span className="bg-green-100 text-gray-900 px-2 py-1 rounded">
+          <span className="bg-[#FEEAD4]  text-gray-900 px-2 py-1 rounded">
             Questions
           </span>
         </h2>

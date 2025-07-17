@@ -18,7 +18,7 @@ export default function BannerSection() {
           <div className="w-full lg:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Helping businesses and individuals for{' '}
-              <span className="bg-green-100 text-gray-900 px-2 py-1 rounded">
+              <span className="bg-[#FEEAD4]  text-gray-900 px-2 py-1 rounded">
                 decades
               </span>
             </h2>
@@ -32,7 +32,7 @@ export default function BannerSection() {
             </div>
             <a
               href="mailto:karsutrahq@gmail.com"
-              className="inline-block bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-xl transition"
+              className="inline-block bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium py-3 px-6 rounded-xl transition"
             >
               Get in touch
             </a>
