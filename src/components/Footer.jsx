@@ -12,9 +12,9 @@ export default function Footer() {
     'Company Incorporation',
     'GST Registration Online',
     'Limited Liability Partnership',
-    'Publich Limited Company',
-    'One Person Company',
-    'Startup Registration',
+    'ITR Filling',
+    'MSME Registration',
+    'Trademark Registration',
     
   ]
   const team = [

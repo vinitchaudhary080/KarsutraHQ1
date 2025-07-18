@@ -25,8 +25,8 @@ export default function Testimonials() {
               “KarsutraHQ made tax filing completely stress-free. Their expert team spotted deductions I never knew existed—saving me over ₹50,000 this year.”
             </p>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900">Rahul Verma</h3>
-              <p className="text-sm text-gray-500">Owner, Verma Textiles</p>
+              <h3 className="text-lg font-semibold text-gray-900">Jatin Kukkar</h3>
+              <p className="text-sm text-gray-500">Owner, Routes 2 Dubai</p>
             </div>
             <div className="absolute bottom-6 right-6">
               <div className="w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center">
@@ -41,11 +41,11 @@ export default function Testimonials() {
               “Their accounting guidance streamlined our financial processes and ensured full compliance. We now feel confident before every audit, thanks to KarsutraHQ.”
             </p>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900">Priya Sharma</h3>
-              <p className="text-sm text-gray-500">Founder, GreenLeaf Startups</p>
+              <h3 className="text-lg font-semibold text-gray-900">Ritvik Yadav</h3>
+              <p className="text-sm text-gray-500">Founder, Khageshvara Aviation Technology Private Limited</p>
             </div>
             <div className="absolute bottom-6 right-6">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#FEEAD4] rounded-full flex items-center justify-center">
                 <img src={QuoteIcon} alt="quote" className="w-6 h-6" />
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Testimonials() {
               “As a freelancer, I used to dread tax season. KarsutraHQ not only organized my records but also optimized my tax strategy—my returns have never been smoother.”
             </p>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-900">Aman Gupta</h3>
+              <h3 className="text-lg font-semibold text-gray-900">Vikash Kumar</h3>
               <p className="text-sm text-gray-500">Freelance Designer</p>
             </div>
             <div className="absolute bottom-6 right-6">

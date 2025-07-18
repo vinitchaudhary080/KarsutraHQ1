@@ -7,7 +7,7 @@ export default function AboutSection() {
     'Tax Management Services',
     'Business Planning',
     'Accounting Services',
-    'Estate Planning',
+    'ROC Compliances',
   ]
 
   return (
@@ -20,12 +20,11 @@ export default function AboutSection() {
               Professional Accounting Services for Business and Individuals
             </h2>
             <p className="text-base sm:text-lg text-gray-700 mb-6">
-              GM Financial offers tailored services for diverse individual and business needs across multiple industries, dedicated to guiding you towards a prosperous future amidst the dynamic financial and regulatory landscape.
-            </p>
+              We offer tailored Financial services for diverse individual and business needs across multiple industries. With a focus on clarity, compliance, and growth, we guide our clients through today’s evolving financial and regulatory environment to help build a secure and successful future. </p>
             <ul className="space-y-4">
               {features.map((feature) => (
                 <li key={feature} className="flex items-start">
-                  <span className="flex-shrink-0 w-6 h-6 bg-green-100 text-green-500 rounded-full flex items-center justify-center mr-3 mt-1">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FEEAD4] text-gray-800 rounded-full flex items-center justify-center mr-3 mt-1">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"

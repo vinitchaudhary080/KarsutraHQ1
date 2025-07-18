@@ -5,7 +5,7 @@ const services = [
   {
     title: 'Company Incorporation',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We help you register your business hassle-free, from choosing the right structure to completing all legal formalities with the MCA.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -25,7 +25,7 @@ const services = [
   {
     title: 'GST Registration Online',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We provide end-to-end assistance in obtaining GST registration, ensuring full compliance with all legal requirements and timely processing.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -45,7 +45,7 @@ const services = [
   {
     title: 'Limited Liability Partnership',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We assist in seamless LLP formation, from name approval to filing incorporation documents, ensuring legal compliance and smooth setup.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -63,9 +63,9 @@ const services = [
     ),
   },
   {
-    title: 'Publich Limited Company',
+    title: 'Income Tax Return Filling',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We offer accurate and timely Income Tax Return filing for individuals and businesses, ensuring maximum deductions and full compliance.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -83,9 +83,9 @@ const services = [
     ),
   },
   {
-    title: 'One Person Company',
+    title: 'GST Return Filling',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We ensure timely and accurate filing of all GST returns, helping you stay compliant and avoid penalties with expert support.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -103,9 +103,9 @@ const services = [
     ),
   },
   {
-    title: 'Startup Registration',
+    title: 'MSME Registration',
     description:
-      "We'll help you navigate the complex and shifting tax laws to facilitate the transfer of assets and minimize the tax liability of your beneficiaries.",
+      "We help businesses obtain MSME registration quickly, enabling access to government benefits, subsidies, and priority sector lending.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -125,7 +125,7 @@ const services = [
   {
     title: 'Trademark Registration',
     description:
-      'Navigate the complexities of tax season with our expert services, tailored to maximize savings and compliance for businesses of all sizes.',
+      'We assist in securing your brand identity through hassle-free trademark registration, from application to approval and legal protection.',
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -143,9 +143,9 @@ const services = [
     ),
   },
   {
-    title: '12A or 12AA or 80G Registration',
+    title: 'ROC Compliances',
     description:
-      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+      "We handle all mandatory ROC filings and annual compliances to keep your company legally compliant and avoid penalties under the Companies Act.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -165,7 +165,7 @@ const services = [
   {
     title: 'Online Trust Registration',
     description:
-      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+      "We provide complete assistance in registering a trust online, from drafting the trust deed to obtaining registration certificates and legal approvals.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -183,9 +183,9 @@ const services = [
     ),
   },
   {
-    title: 'Section 8 Company',
+    title: 'Audit & Assurance Services',
     description:
-      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+      "We offer comprehensive audit and assurance services to ensure financial accuracy, regulatory compliance, and enhanced stakeholder confidence.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -203,9 +203,9 @@ const services = [
     ),
   },
   {
-    title: 'Business Registration',
+    title: 'Accounting and Book Keeping Services',
     description:
-      "Elevate your business with GM Financial's expert accounting services, ensuring precision in your financial landscape and strategy.",
+      "We provide accurate and timely recording of financial transactions, ensuring organized books, better decision-making, and compliance readiness.",
     icon: (
       <svg
         className="w-5 h-5 text-[#FA9426]"
@@ -251,7 +251,7 @@ export default function ServicesSection() {
                 {svc.title}
               </h3>
               <p className="text-gray-700 mb-6 flex-grow">{svc.description}</p>
-              <a
+              {/* <a
                 href="#"
                 className="inline-flex items-center text-gray-900 font-medium hover:text-gray-700"
               >
@@ -269,7 +269,7 @@ export default function ServicesSection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

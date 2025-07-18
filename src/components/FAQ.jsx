@@ -4,12 +4,12 @@ import React from 'react'
 export default function FAQ() {
   const faqs = [
     {
-      question: "Which services does KarsutraHQ provide?",
+      question: "What services does KarsutraHQ provide?",
       answer: "We specialize in comprehensive tax filing, GST reconciliation, accounting & bookkeeping, business registration, and financial consultancy tailored for small to medium enterprises."
     },
     {
       question: "How do I start working with you?",
-      answer: "Simply fill out our contact form or email us at support@karsutrahq.com. We’ll schedule an initial consultation within 24 hours to understand your needs and outline the next steps."
+      answer: "Simply fill out our contact form or email us at karsutrahq@gmail.com. We’ll schedule an initial consultation within 24 hours to understand your needs and outline the next steps."
     },
     {
       question: "What are your pricing models?",
@@ -17,11 +17,11 @@ export default function FAQ() {
     },
     {
       question: "Can you handle past-year tax filings?",
-      answer: "Yes—our team can assist with filing returns for up to 5 previous years, ensuring compliance with current regulations and helping you claim any due refunds."
+      answer: "Yes—our team can assist with filing returns for up to 2 previous years, ensuring compliance with current regulations and helping you claim any due refunds."
     },
     {
       question: "Do you offer ongoing support after filing?",
-      answer: "Absolutely. We provide 3 months of post-filing support for any queries from income tax notices to GST audits, with optional extended support plans available."
+      answer: "Absolutely. We provide 6 months of post-filing support for any queries from income tax notices to GST audits, with optional extended support plans available."
     },
   ]
 

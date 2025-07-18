@@ -4,10 +4,10 @@ import bannerImg from '../assets/banner.jpg'  // apni image yahan daalna
 
 export default function BannerSection() {
   const team = [
-    'Michael L. Cove, CPA with 35 years experience',
-    'Philip D. Felson, CPA with 38 years experience',
-    'Richard L. Skeen, JD, LL.M (Taxation) with 18 years experience',
-    'Michael D. Felson, CPA with 12 years experience',
+    'Quick Service – Fast and efficient delivery.',
+    'High Accuracy – Error-free execution every time.',
+    'Trusted Partner – Reliable and transparent processes.',
+    'On-Time Compliance – Never miss a deadline.',
   ]
 
   return (
@@ -23,7 +23,7 @@ export default function BannerSection() {
               </span>
             </h2>
             <p className="text-gray-700 mb-6">
-              With years of experience in the industry, we have the expertise to provide you with the right solutions to meet your financial goals.
+              With years of industry experience, we offer expert-driven solutions tailored to meet your business needs effectively and efficiently.
             </p>
             <div className="space-y-2 mb-6 text-gray-800">
               {team.map((member) => (
