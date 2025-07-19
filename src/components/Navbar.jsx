@@ -87,7 +87,7 @@ export default function Navbar({ onGetInTouch }) {
           <div className="px-6 py-4">
             <button
               onClick={() => { handleNavClick(); onGetInTouch() }}
-              className="block w-full bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium text-center py-2 rounded-full transition"
+              className="block w-full bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium text-center py-2 rounded-xl transition"
             >
               Get in touch
             </button>

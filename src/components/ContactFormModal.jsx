@@ -5,7 +5,7 @@ import phoneIcon from '../assets/Phone Rounded.svg'
 import letterIcon from '../assets/Letter.svg'
 import buildingIcon from '../assets/Buildings.svg'
 
-// EmailJS 초기화
+// initialize EmailJS with your user ID
 emailjs.init('ytKzA4OdeQE6M0Ua2')
 
 export default function ContactFormModal({ onClose }) {
@@ -30,8 +30,6 @@ export default function ContactFormModal({ onClose }) {
     'Online Trust Registration',
     'Audit & Assurance Services',
     'Accounting and Book Keeping Services',
-    
-
   ]
 
   const handleChange = e => {
@@ -54,7 +52,6 @@ export default function ContactFormModal({ onClose }) {
   const handleSubmit = e => {
     e.preventDefault()
     setStatus(null)
-
     if (!validate()) return
 
     const templateParams = {
@@ -79,21 +76,39 @@ export default function ContactFormModal({ onClose }) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    // Make the viewport itself scrollable on small screens
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto px-4 py-6">
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black opacity-50" onClick={onClose} />
+      <div
+        className="absolute inset-0 bg-black opacity-50"
+        onClick={onClose}
+      />
 
-      {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-lg w-full max-w-4xl mx-4 overflow-hidden">
-        {/* Close Button */}
+      {/* Modal box */}
+      <div
+        className="
+          relative
+          bg-white
+          rounded-2xl
+          shadow-lg
+          w-full
+          max-w-4xl
+          mx-auto
+          overflow-hidden
+          max-h-[90vh]
+          flex flex-col
+        "
+      >
+        {/* Close button */}
         <button
-          className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+          className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 z-10"
           onClick={onClose}
         >
           ✕
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Scrollable content */}
+        <div className="flex-1 overflow-y-auto grid grid-cols-1 md:grid-cols-2">
           {/* Left: Contact Info */}
           <div className="bg-[#FA9426] p-8 text-white">
             <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
@@ -142,7 +157,7 @@ export default function ContactFormModal({ onClose }) {
                   pattern="\d{10}"
                   title="Enter exactly 10 digits"
                   className="w-full border-b border-gray-300 focus:outline-none py-2"
-                  placeholder="Enter you mobile number"
+                  placeholder="Enter your mobile number"
                   required
                 />
               </div>
@@ -156,7 +171,7 @@ export default function ContactFormModal({ onClose }) {
                   pattern="^[A-Za-z0-9._%+-]+@gmail\.com$"
                   title="Email must end with @gmail.com"
                   className="w-full border-b border-gray-300 focus:outline-none py-2"
-                  placeholder="Enter your mail id "
+                  placeholder="Enter your mail id"
                   required
                 />
               </div>
@@ -188,7 +203,7 @@ export default function ContactFormModal({ onClose }) {
                 />
               </div>
 
-              {/* Status Message */}
+              {/* Status message */}
               {status && (
                 <p
                   className={
