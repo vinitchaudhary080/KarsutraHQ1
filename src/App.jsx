@@ -1,5 +1,6 @@
 // src/App.jsx
-import React from 'react'
+
+import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -13,17 +14,25 @@ import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import Terms from './components/Terms'
 import Privacy from './components/Privacy'
+import ContactFormModal from './components/ContactFormModal'
 
 export default function App() {
+  const [isFormOpen, setIsFormOpen] = useState(false)
+
   return (
     <>   <ScrollToTop />
+
+       {isFormOpen && (
+       <ContactFormModal onClose={() => setIsFormOpen(false)} />
+    )}
       <Routes>
         {/* Landing page */}
         <Route
           path="/"
           element={
             <>
-              <Navbar />
+              
+              <Navbar onGetInTouch={() => setIsFormOpen(true)} />
               <Hero />
               <AboutSection />
               <ServicesSection />

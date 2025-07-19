@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import logo from '../assets/karsutralogo.jpeg'
 
-export default function Navbar() {
+export default function Navbar({ onGetInTouch }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleNavClick = () => setIsOpen(false)
@@ -48,12 +48,12 @@ export default function Navbar() {
           >
             Services
           </Link>
-          <a
-            href="mailto:karsutrahq@gmail.com"
-            className="inline-block bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium py-3 px-6 rounded-xl transition"
+          <button
+            onClick={onGetInTouch}
+            className="bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium py-2 px-6 rounded-xl transition"
           >
             Get in touch
-          </a>
+          </button>
         </div>
       </div>
 
@@ -85,13 +85,12 @@ export default function Navbar() {
 
           {/* Action Button */}
           <div className="px-6 py-4">
-            <a
-              href="mailto:karsutrahq@gmail.com"
-              onClick={handleNavClick}
-              className="block w-full bg-green-400 hover:bg-green-500 text-white font-medium text-center py-2 rounded-xl transition"
+            <button
+              onClick={() => { handleNavClick(); onGetInTouch() }}
+              className="block w-full bg-[#FA9426] hover:bg-[#D97E0D] text-white font-medium text-center py-2 rounded-full transition"
             >
               Get in touch
-            </a>
+            </button>
           </div>
         </div>
       )}

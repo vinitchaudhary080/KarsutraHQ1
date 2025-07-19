@@ -1,12 +1,14 @@
 // src/components/Footer.jsx
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import phoneIcon from '../assets/Phone Rounded.svg'
 import letterIcon from '../assets/Letter.svg'
 import buildingIcon from '../assets/Buildings.svg'
-import { Link } from 'react-router-dom'
-
+import ContactFormModal from './ContactFormModal'
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const quickLinks = ['About Us', 'Services', 'Testimonials', 'FAQs', 'Contact Us']
   const services = [
     'Company Incorporation',
@@ -15,46 +17,50 @@ export default function Footer() {
     'ITR Filling',
     'MSME Registration',
     'Trademark Registration',
-    
   ]
   const team = [
     {
       label: 'Phone',
       value: '+91-9413730750',
-      icon: (
-        <img
-          src={phoneIcon}
-          alt="Phone"
-          className="w-5 h-5 mr-2 object-contain"
-        />
-      )
+      icon: <img src={phoneIcon} alt="Phone" className="w-5 h-5 mr-2 object-contain" />
     },
     {
       label: 'Email',
       value: 'karsutrahq@gmail.com',
-      icon: (
-        <img
-          src={letterIcon}
-          alt="Email"
-          className="w-5 h-5 mr-2 object-contain"
-        />
-      )
+      icon: <img src={letterIcon} alt="Email" className="w-5 h-5 mr-2 object-contain" />
     },
     {
       label: 'Office',
-      value: '4th Floor, ENKAY TOWER, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122001',
-      icon: (
-        <img
-          src={buildingIcon}
-          alt="Office address"
-          className="w-5 h-5 mr-2 object-contain"
-        />
-      )
+      value:
+        '4th Floor, ENKAY TOWER, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122001',
+      icon: <img src={buildingIcon} alt="Office" className="w-5 h-5 mr-2 object-contain" />
     },
   ]
 
+  const scrollToSection = id => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleLinkClick = link => {
+    if (link === 'Contact Us') {
+      setIsModalOpen(true)
+    } else {
+      const map = {
+        'About Us': 'about',
+        'Services': 'services',
+        'Testimonials': 'testimonials',
+        'FAQs': 'faq'
+      }
+      const id = map[link]
+      if (id) scrollToSection(id)
+    }
+  }
+
   return (
     <footer className="bg-white text-gray-800">
+      {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
+
       {/* CTA Banner */}
       <div className="border-b overflow-hidden py-12">
         <div className="inline-flex whitespace-nowrap animate-marquee">
@@ -75,9 +81,14 @@ export default function Footer() {
         <div className="flex-1">
           <h3 className="text-sm font-semibold uppercase mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            {quickLinks.map((link) => (
+            {quickLinks.map(link => (
               <li key={link}>
-                <a href="#" className="hover:underline">{link}</a>
+                <button
+                  onClick={() => handleLinkClick(link)}
+                  className="hover:underline text-left"
+                >
+                  {link}
+                </button>
               </li>
             ))}
           </ul>
@@ -87,7 +98,7 @@ export default function Footer() {
         <div className="flex-1">
           <h3 className="text-sm font-semibold uppercase mb-4">Services</h3>
           <ul className="space-y-2">
-            {services.map((svc) => (
+            {services.map(svc => (
               <li key={svc}>
                 <a href="#" className="hover:underline">{svc}</a>
               </li>
@@ -98,12 +109,9 @@ export default function Footer() {
         {/* Contact */}
         <div className="flex-1">
           <h3 className="text-sm font-semibold uppercase mb-4">
-            <a
-              href="mailto:karsutrahq@gmail.com"
-              className="hover:underline"
-            >
+            <button onClick={() => setIsModalOpen(true)} className="hover:underline">
               Contact
-            </a>
+            </button>
           </h3>
           <ul className="space-y-4">
             {team.map(({ label, value, icon }) => (
@@ -117,7 +125,6 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
       </div>
 
       {/* Bottom Legal */}
@@ -127,7 +134,6 @@ export default function Footer() {
             KarSutraHQ © 2025. All Rights Reserved.
           </p>
           <div className="mt-2 md:mt-0 space-x-4">
-
             <Link to="/terms" className="text-sm text-gray-600 hover:underline">
               Terms of Service
             </Link>
